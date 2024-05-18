@@ -1,0 +1,16 @@
+Source: rehex-plugin-binwalk
+Priority: extra
+Maintainer: Daniel Collins <solemnwarning@solemnwarning.net>
+Build-Depends:
+ debhelper (>= 9)
+Standards-Version: 3.9.4
+Section: editors
+Homepage: https://github.com/solemnwarning/rehex/
+
+Package: rehex-plugin-binwalk
+Architecture: all
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+ python3-binwalk
+Description: Reverse Engineers' Hex Editor
