@@ -40,6 +40,13 @@ local WXK_ERRORS = {
 
 rehex.AddToToolsMenu("Binwalk signature analysis", function(mainwindow)
 	local doc = mainwindow:active_document()
+	local filename = doc:get_filename()
+	
+	if filename == ""
+	then
+		wx.wxMessageBox("File must be saved before analysing with Binwalk", "Error", wx.wxOK | wx.wxICON_INFORMATION)
+		return
+	end
 	
 	local progress_dialog = wx.wxProgressDialog(
 		"Analysing file",
@@ -57,7 +64,7 @@ rehex.AddToToolsMenu("Binwalk signature analysis", function(mainwindow)
 		local timer = wx.wxTimer.new()
 		
 		-- We store the name of the current file in the environment for the stub process.
-		wx.wxSetEnv("BINWALK_ANALYSIS_FILE", doc:get_filename())
+		wx.wxSetEnv("BINWALK_ANALYSIS_FILE", filename)
 		
 		local proc = wx.wxProcess.new()
 		proc:Redirect()
