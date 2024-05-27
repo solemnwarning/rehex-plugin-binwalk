@@ -2,7 +2,7 @@
 
 This is a plugin for REHex that allows using [Binwalk](https://github.com/ReFirmLabs/binwalk)'s signature analysis on a file within the editor.
 
-# Usage
+## Usage
 
 Once the plugin is installed, a *Binwalk signature analysis* command will be added to the *Tools* menu:
 
@@ -12,9 +12,9 @@ which will add any signatures discovered in the file by Binwalk as comments:
 
 ![screenshot of signatures](doc/screenshot2.png)
 
-# Installation
+## Installation
 
-If you already have my package repository set up on Debian/Ubuntu/Fedora/Redhat/etc as described in the main [REHex README](https://github.com/solemnwarning/rehex#installation), then the plugin and dependencies can be installed via your package manager, e.g:
+If you already have my package repository set up on Debian, Ubuntu or Fedora as described in the main [REHex README](https://github.com/solemnwarning/rehex#installation), then the plugin and dependencies can be installed via your package manager, e.g:
 
     $ sudo apt-get install rehex-plugin-binwalk
     OR
