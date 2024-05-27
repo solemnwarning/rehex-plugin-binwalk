@@ -5,12 +5,13 @@ Build-Depends:
  debhelper (>= 9)
 Standards-Version: 3.9.4
 Section: editors
-Homepage: https://github.com/solemnwarning/rehex/
+Homepage: https://github.com/solemnwarning/rehex-plugin-binwalk/
 
 Package: rehex-plugin-binwalk
 Architecture: all
 Depends:
- ${shlibs:Depends},
  ${misc:Depends},
- python3-binwalk
-Description: Reverse Engineers' Hex Editor
+ python3-binwalk,
+ rehex
+Enhances: rehex
+Description: Binwalk analysis plugin for the REHex hex editor

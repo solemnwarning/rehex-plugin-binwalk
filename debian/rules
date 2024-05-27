@@ -1,5 +1,7 @@
 #!/usr/bin/make -f
 # -*- makefile -*-
 
+export prefix := /usr
+
 %:
 	dh $@
