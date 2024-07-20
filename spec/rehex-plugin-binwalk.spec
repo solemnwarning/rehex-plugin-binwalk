@@ -11,7 +11,7 @@ Source0:  rehex-plugin-binwalk-%{version}.tar.gz
 
 BuildRequires: make
 
-Requires: rehex
+Requires: rehex >= 0.62.0-0~
 Enhances: rehex
 
 Requires: binwalk

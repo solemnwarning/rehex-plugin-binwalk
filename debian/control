@@ -12,6 +12,6 @@ Architecture: all
 Depends:
  ${misc:Depends},
  python3-binwalk,
- rehex
+ rehex (>= 0.62.0-0~)
 Enhances: rehex
 Description: Binwalk analysis plugin for the REHex hex editor
