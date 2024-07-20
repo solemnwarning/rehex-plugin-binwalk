@@ -1,5 +1,5 @@
 rehex-plugin-binwalk (1.0-0) unstable; urgency=low
 
-  * Test release
+  * Initial Debian release.
 
- -- Daniel Collins <solemnwarning@solemnwarning.net>  Sat, 18 May 2024 01:09:45 +0100
+ -- Daniel Collins <solemnwarning@solemnwarning.net>  Sat, 20 Jul 2024 18:51:28 +0100
