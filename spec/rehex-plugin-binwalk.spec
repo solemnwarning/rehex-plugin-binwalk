@@ -2,7 +2,7 @@
 
 Name:     rehex-plugin-binwalk
 Version:  PUT_VERSION_HERE
-Release:  0%{tilde_dist}
+Release:  0%{tilde_dist}+1
 Summary:  Binwalk analysis plugin for the REHex hex editor
 
 License:  GPLv2
@@ -18,6 +18,12 @@ Requires: binwalk
 Requires: python3
 
 %description
+
+# This package doesn't have any binaries in it, but the RPM build process under Fedora 41 chokes
+# while trying to prepare a debugsource package, so we skip it.
+#
+# "Empty %files file /builddir/build/BUILD/rehex-plugin-binwalk-1.0-build/rehex-plugin-binwalk-1.0/debugsourcefiles.list"
+%global debug_package %{nil}
 
 %prep
 %setup -q -n rehex-plugin-binwalk-%{version}
